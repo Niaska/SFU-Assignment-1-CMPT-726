@@ -1,5 +1,6 @@
 # SFU-Assignment-1-CMPT-726
 Assignment-1 Regression
+
 Regression
 In this question you will train models for regression and analyze a dataset. Start by downloading
 the code and dataset from the website.
@@ -7,6 +8,7 @@ The dataset is created from data provided by UNICEF’s State of the World’s C
 http://www.unicef.org/sowc2013/statistics.html
 Child mortality rates (number of children who die before age 5, per 1000 live births) for 195
 countries, and a set of other indicators are included.
+
 5.1 Getting started
 Run the provided script polynomial regression.py to load the dataset and names of countries / features.
 Answer the following questions about the data. Include these answers in your report.
@@ -22,6 +24,7 @@ For the rest of this question use the following data and splits for train/test a
 • Testing data: countries 101-195 (Madagascar to Zimbabwe).
 • Cross-validation: subdivide training data into folds with countries 1-10 (Afghanistan to Austria), 11-20 (Azerbaijan to Bhutan), ... . I.e. train on countries 11-100, validate on 1-10; train on
 1-10 and 21-100, validate on 11-20, ...
+
 5.2 Polynomial Regression
 Implement linear basis function regression with polynomial basis functions. Use only monomials
 of a single variable (x1, x2
@@ -49,6 +52,7 @@ The testing error for feature 11 (GNI per capita) is very high. To see what happ
 visualize 1d.py may be useful.
 In your report, include plots of the fits for degree 3 polynomials for features 11 (GNI), 12
 (Life expectancy), 13 (literacy).
+
 5.3 Sigmoid Basis Functions
 1. Create a python script sigmoid regression.py for the following.
 Implement regression using sigmoid basis functions for a single input feature. Use two
@@ -57,6 +61,7 @@ un-normalized features
 Fit this regression model using feature 11 (GNI per capita).
 In your report, include a plot of the fit for feature 11 (GNI).
 In your report, include the training and testing error for this regression model.
+
 5.4 Regularized Polynomial Regression
 1. Create a python script polynomial regression reg.py for the following.
 Implement L2-regularized regression. Fit a degree 2 polynomial using λ = {0, .01, .1, 1, 10, 102
